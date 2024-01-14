@@ -232,7 +232,7 @@ local symbol_specs = {
 	CC = { context = { name = "ℂ" }, command = [[\mathbb{C}]] },
 	OO = { context = { name = "∅" }, command = [[\emptyset]] },
 	pwr = { context = { name = "P" }, command = [[\powerset]] },
-	cc = { context = { name = "⊂" }, command = [[\subset]] },
+	ccc = { context = { name = "⊂" }, command = [[\subset]] },
 	cq = { context = { name = "⊆" }, command = [[\subseteq]] },
 	qq = { context = { name = "⊃" }, command = [[\supset]] },
 	qc = { context = { name = "⊇" }, command = [[\supseteq]] },
