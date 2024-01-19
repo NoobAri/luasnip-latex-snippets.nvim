@@ -178,10 +178,10 @@ local greek_specs = {
 	[";b"] = { context = { name = "β" }, command = [[\beta]] },
 	[";g"] = { context = { name = "γ" }, command = [[\gamma]] },
 	[";d"] = { context = { name = "δ" }, command = [[\delta]] },
-	[";ee"] = { context = { name = "ε" }, command = [[\epsilon]] },
-	[";e"] = { context = { name = "ε" }, command = [[\varepsilon]] },
+	[";e"] = { context = { name = "ε" }, command = [[\epsilon]] },
+	[";ve"] = { context = { name = "ε" }, command = [[\varepsilon]] },
 	[";z"] = { context = { name = "ζ" }, command = [[\zeta]] },
-	[";et"] = { context = { name = "η" }, command = [[\eta]] },
+	[";h"] = { context = { name = "η" }, command = [[\eta]] },
 	[";th"] = { context = { name = "θ" }, command = [[\theta]] },
 	[";vth"] = { context = { name = "θ" }, command = [[\vartheta]] },
 	[";i"] = { context = { name = "ι" }, command = [[\iota]] },
@@ -190,8 +190,7 @@ local greek_specs = {
 	[";m"] = { context = { name = "μ" }, command = [[\mu]] },
 	[";n"] = { context = { name = "ν" }, command = [[\nu]] },
 	[";x"] = { context = { name = "ξ" }, command = [[\xi]] },
-	[";oc"] = { context = { name = "ο" }, command = [[\omicron]] },
-	[";p"] = { context = { name = "π" }, command = [[\pi]] },
+	[";pi"] = { context = { name = "π" }, command = [[\pi]] },
 	[";r"] = { context = { name = "ρ" }, command = [[\rho]] },
 	[";vr"] = { context = { name = "ρ" }, command = [[\varrho]] },
 	[";s"] = { context = { name = "σ" }, command = [[\sigma]] },
@@ -205,18 +204,16 @@ local greek_specs = {
 	-- uppercase
 	[";G"] = { context = { name = "Γ" }, command = [[\Gamma]] },
 	[";D"] = { context = { name = "Δ" }, command = [[\Delta]] },
-	[";Z"] = { context = { name = "Ζ" }, command = [[\Zeta]] },,
 	[";TH"] = { context = { name = "Θ" }, command = [[\Theta]] },
 	[";L"] = { context = { name = "Λ" }, command = [[\Lambda]] },
 	[";X"] = { context = { name = "Ξ" }, command = [[\Xi]] },
-	[";P"] = { context = { name = "Π" }, command = [[\Pi]] },
+	[";PI"] = { context = { name = "Π" }, command = [[\Pi]] },
 	[";S"] = { context = { name = "Σ" }, command = [[\Sigma]] },
 	[";U"] = { context = { name = "υ" }, command = [[\Upsilon]] },
 	[";PH"] = { context = { name = "Φ" }, command = [[\Phi]] },
 	[";PS"] = { context = { name = "Ψ" }, command = [[\Psi]] },
 	[";O"] = { context = { name = "Ω" }, command = [[\Omega]] },
 }
-
 local greek_snippets = {}
 for k, v in pairs(greek_specs) do
 	table.insert(
