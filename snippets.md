@@ -4,6 +4,239 @@ Temp snippet document until I get a solution made with LuaSnip's `snippet_list`.
 
 > :warning: **Warning:** As mentioned in the README, most snippets require [VimTeX](https://github.com/lervag/vimtex) for the condition/show-condition to work.
 
+## Autobacksash
+
+An automatic backslash `\` will be appended to the following commands (in math mode).
+
+Autobackslash|
+---|
+arcsin|
+sin
+arccos
+cos
+arctan
+tan
+cot
+csc
+sec
+log
+ln
+exp
+ast
+star
+perp
+sup
+inf
+det
+max
+min
+argmax
+argmin
+
+## Greek Letters
+
+Trigger| Tex | Output 
+---|:---:|---
+`;a` | `\alpha` | $\alpha$
+`;b` | `\beta` |$\beta$
+`;g` | `\gamma` |$\gamma$
+`;d` | `\delta` |$\delta$
+`;ee` | `\epsilon` |$\epsilon$
+`;e` | `\varepsilon` |$\varepsilon$
+`;z` | `\zeta` |$\zeta$
+`;et` | `\eta` |$\eta$
+`;th` | `\theta`|$\theta$
+`;vth`| `\vartheta` | $\vartheta$
+`;i` | `\iota` | $\iota$
+`;k` | `\kappa` | $\kappa$
+`;l` | `\lambda` |$\lambda$
+`;m` | `\mu` |$\mu$
+`;n` | `\nu` |$\nu$
+`;x` | `\xi`|$\xi$
+`;oc` | `\omicron` | $\omicron$
+`;p` | `\pi` |$\pi$
+`;r` | `\rho` |$\rho$
+`;vr` | `\varrho`| $\varrho$
+`;s` | `\sigma` |$\sigma$
+`;ta` | `\tau` | $\tau$
+`;u` | `\upsilon` | $\upsilon$
+`;ph` | `\phi` | $\phi$
+`;vph` | `\varphi` |$\varphi$
+`;c` | `\chi` | $\chi$
+`;ps` | `\psi` | $\psi$
+`;o` | `\omega` |$\omega$
+
+Trigger| Tex | Output 
+---|:---:|---
+`;G` | `\Gamma` |$\Gamma$
+`;D` | `\Delta` |$\Delta$
+`;TH` | `\Theta`|$\Theta$
+`;L` | `\Lambda` |$\Lambda$
+`;X` | `\Xi`|$\Xi$
+`;P` | `\Pi` |$\Pi$
+`;S` | `\Sigma` |$\Sigma$
+`;U` | `\Upsilon` | $\Upsilon$
+`;PH` | `\Phi` | $\Phi$
+`;PS` | `\Psi` | $\Psi$
+`;O` | `\Omega` |$\Omega$
+
+## Superscripts
+
+To use the following, insert a word, then the trigger:
+`<prefix><trigger>`
+
+Trigger| Tex | Output 
+---|:---:|---
+sr | `^2` | `<prefix>`$^2$
+cb | `^3` | `<prefix>`$^3$
+compl | `^{c}` | `<prefix>`$^{c}$
+vtr | `^{T}` | `<prefix>`$^{T}$
+inv | `^{-1}` | `<prefix>`$^{-1}$
+
+## Multi-Argument Functions
+
+#### Fractions
+
+The trigger for fractions is `//`. The tex will be of the form
+
+`\frac{<>}{<>}`
+
+If you place a value first, then you can use `/` to fill in the rest: `<stuff>/<otherstuff>`
+
+#### Limits
+
+The trigger for limits is `lim`. The tex will be of the form
+`\lim<><><>`
+
+#### Sum
+
+The trigger for sums is `sum`. The tex will be of the form
+`\sum<> <>`
+
+#### Product
+
+The trigger for products is `prod`. The tex will be of the form
+`\prod<> <>`
+
+#### Coproduct
+
+The trigger for coproducts is `cprod`. The tex will be of the form
+`\coprod<> <>`
+
+#### Sets
+
+The trigger for sets is `set`. The tex will be of the form
+` \{<>\}`
+
+#### Big Unions
+
+The trigger for big unions (bigcup) is `nnn`. The tex will be of the form
+`\bigcap<> <>`
+
+#### Big Intersections
+
+The trigger for big intersections (bigcap) is `uuu`. The tex will be of the form
+`\bigcup<> <>`
+
+#### Binomial
+
+The trigger for n choose k  is `bnc`. The tex will be of the form
+`\binom{<>}{<>}`
+
+#### Partial Derivatives
+
+The trigger for partial derivatives (Legendre notation) is 
+`pd`. The tex will be of the form `\frac{\partial <>}{\partial <>}`
+
+## Symbols
+
+Trigger| Tex | Output 
+---|:---:|---
+`!=` | `\neq` |$\neq$
+`<=` | `\leq`  |$\leq$
+`>=` | `\geq` |$\geq$
+`<<` | `\ll` |$\ll$
+`>>` | `\gg` |$\gg$
+`~~` | `\sim` |$\sim$
+`~=` | `\approx` |$\approx$
+`~-` | `\simeq` |$\simeq$
+`-~` | `\backsimeq` |$\backsimeq$
+`-=` | `\equiv`|$\equiv$
+`=~` | `\cong` |$\cong$
+`:=` | `\definedas` |$\definedas$
+`**` | `\cdot`|$\cdot$
+`xx` | `\times`|$\times$
+`!+` | `\oplus`|$\oplus$
+`!*` | `\otimes`|$\otimes$
+`NN` | `\mathbb{N}`|$\mathbb{N}$
+`ZZ` | `\mathbb{Z}`|$\mathbb{Z}$
+`QQ` | `\mathbb{Q}`|$\mathbb{Q}$
+`RR` | `\mathbb{R}`|$\mathbb{R}$
+`CC` | `\mathbb{C}`|$\mathbb{C}$
+`OO` | `\emptyset`|$\emptyset$
+`pwr` | `\powerset`|$\powerset$
+`cc` | `\subset`|$\subset$
+`cq` | `\subseteq`|$\subseteq$
+`qq` | `\supset`|$\supset$
+`qc` | `\supseteq`|$\supseteq$
+`\\\\\\` | \setminus|$\setminus$
+`Nn` | `\cap`|$\cap$
+`UU` | `\cup`|$\cup$
+`::` | `\colon`|$\colon$
+`AA` | `\forall`|$\forall$
+`EE` | `\exists`|$\exists$
+`inn` | `\in`|$\in$
+`notin` | `\not\in`|$\not\in$
+`!-` | `\lnot`|$\lnot$
+`VV` | `\lor`|$\lor$
+`WW` | `\land`|$\land$
+`!W` | `\bigwedge`|$\bigwedge$
+`=>` | `\implies`|$\implies$
+`=<` | `\impliedby`|$\impliedby$
+`iff` | `\iff`|$\iff$
+`->` | `\to`|$\to$
+`!>` | `\mapsto`|$\mapsto$
+`<-` | `\gets`|$\gets$
+`dp` | `\partial`|$\partial$
+`-->` | `\longrightarrow`|$\longrightarrow$
+`<->` | `\leftrightarrow`|$\leftrightarrow$
+`2>` | `\rightrightarrows`|$\rightrightarrows$
+`upar` | `\uparrow`|$\uparrow$
+`dnar` | `\downarrow`|$\downarrow$
+`ooo` | `\infty`|$\infty$
+`lll` | `\ell`|$\ell$
+`dag` | `\dagger`|$\dagger$
+`+-` | `\pm`|$\pm$
+`-+` | `\mp`|$\mp$
+
+## Single Commands
+
+Trigger| Tex  
+---|:---:
+`tt` | `\text`
+`sbf` | `\symbf`
+`syi` | `\symit` 
+`udd` | `\underline`
+`conj` | `\overline`
+`__` | `_` 
+`td` | `^` 
+`sbt` | `\substack` 
+`sq` | `\sqrt` 
+
+## Postfix
+
+`<stuff><trigger>`
+
+Trigger| Tex
+---|:---:
+`mbb` | `\mathbb{} `
+`mcal` | `\mathcal{}` 
+`mscr` | `\mathscr{}`
+`mfr` | `\mathfrak{}`
+`hat` | `\hat{}` 
+`bar` | `\overline{}`
+`tld` | `\tilde{}`
+
 ## `commands.lua`
 
 ### Labels/References
